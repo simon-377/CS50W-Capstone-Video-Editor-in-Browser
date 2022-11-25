@@ -1,0 +1,132 @@
+.site-container {
+  display: none;
+}
+
+#\/instructions * {
+  margin-left: 50px;
+  margin-top: 10px;
+  color: grey;
+}
+
+#register-form-container {
+  margin: 20px;
+  padding: 20px;
+  border: solid rgba(32, 45, 226, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: grey;
+}
+
+#register-message {
+  padding: 20px;
+  margin: 20px;
+  border: solid 1px rgba(255, 10, 10, 0.7);
+  box-shadow: inset 0 0 5px rgba(255, 10, 10, 0.7), 0 0 5px rgba(255, 10, 10, 0.7);
+  border-radius: 10px;
+}
+
+#media-container {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  height: 39.375vw;
+  width: 20vw;
+  margin: 20px;
+  margin-left: 0px;
+}
+#media-container h1 {
+  text-align: center;
+  margin-top: 12.6vw;
+  color: grey;
+  font-size: 5.4vw;
+}
+
+#canvas {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  width: 70vw;
+  height: 39.375vw;
+  margin-right: 0px;
+}
+
+#timeline-time {
+  margin-left: 20px;
+  margin-bottom: -6.7vh;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+#timeline-container {
+  display: block;
+  height: 7vh;
+  width: 94vw;
+  margin: 20px;
+  margin-top: -10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#timeline-container .clip {
+  padding-left: 3px;
+  display: inline-block;
+  background-color: rgb(147, 183, 255);
+  border-radius: 5px;
+  height: 5.8vh;
+  overflow: hidden;
+  white-space: nowrap;
+  border: solid 1px rgb(41, 41, 41);
+}
+#timeline-container::-webkit-scrollbar {
+  height: 10px;
+}
+#timeline-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#timeline-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+#timeline-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#\/ {
+  width: 96vw;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+.media-elements {
+  color: grey;
+  padding: 5px;
+}
+.media-elements:hover {
+  color: lightgrey;
+}
+
+@media (max-width: 990px) {
+  #media-container {
+    height: 20vh;
+    width: 85vw;
+    margin-left: 30px;
+  }
+  #media-container h1 {
+    margin-top: 3.6vh;
+    font-size: 5.4vh;
+  }
+  #canvas {
+    width: 85vw;
+    height: 47.8125;
+    margin-bottom: 0px;
+  }
+  #timeline-container {
+    width: 85vw;
+    margin-top: 10px;
+  }
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}/*# sourceMappingURL=styles.css.map */

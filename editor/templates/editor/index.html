@@ -1,0 +1,65 @@
+{% extends 'editor/layout.html' %}
+
+{% block body %}
+    <div id="index-body">
+        <div id="/" class="site-container">
+            <div class="row" id="media-and-player-container">
+                <div id="player-container" class="col-lg">
+                    <video id="v1" width="1280" height="720" hidden></video>
+                    <video id="v2" width="1280" height="720" hidden></video>
+                    <canvas width="1280" height="720" id="canvas"></canvas>
+                </div>
+                <div id="media-container" class="col-lg">
+                    <h1 class="unselectable" id="drop-files">DROP<br>FILES</h1>                    
+                </div>
+            </div>
+            <canvas width="1280" height="200" id="timeline-time"></canvas>
+            <div id="timeline-container">
+
+            </div>
+        </div>
+        <div id="/register" class="site-container container">
+            <div>
+                <div id="register-form-container">
+                    <div class="alert alert-danger" role="alert" id="register-message" style="display:none;">
+                        <span></span>
+                    </div>
+                    <form action="" id="register-form">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" maxlength="30" minlength="1">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="pw" maxlength="30" minlength="1">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="pw-confirm" maxlength="30" minlength="1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Keep this -->
+        <div id="/login" class="site-container"></div>
+
+        <div id="/instructions" class="site-container">
+            <h2>instructions</h2>
+            <hr>
+            <p>WATCH OUT THAT YOU DO NOT HAVE CAPS LOCK  ON</p>
+            <p>Double click files in media pool to append them to the timeline</p>
+            <p>Scroll wheel to zoom</p>
+            <p>Ctrl + double click to append in front of current clip</p>
+            <p>"A" or "D" to skip to next or previous clip</p>
+            <p>Shift + "A" or "D" to truncate beginning or ending</p>
+            <p>"Q" or "E" to move clip left or right</p>
+            <p>"S" to cut</p>
+            <p>"F" to delete current clip</p>
+            <p>Space to play and pause</p>
+        </div>
+    </div>
+{% endblock %}
